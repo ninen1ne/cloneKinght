@@ -1,11 +1,12 @@
 import pygame
 pygame.init()
 
+#ขนาดจอ
+w_height = 600
+w_width = 1000
 
-w_height = 1000
-w_width = 600
 title = pygame.display.set_caption('Cloneknight')
-screen = pygame.display.set_mode((w_height,w_width))
+screen = pygame.display.set_mode((w_width, w_height))
 
 run = True
 while run :
