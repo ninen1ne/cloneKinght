@@ -9,6 +9,7 @@ title = pygame.display.set_caption('Cloneknight')
 screen = pygame.display.set_mode((w_width, w_height))
 
 run = True
+#ตัวเกม-------------------------------------------------------------------------------------------------------------------------------------
 while run :
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
