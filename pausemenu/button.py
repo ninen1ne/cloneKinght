@@ -1,4 +1,5 @@
 #Make button class
+#Cr. Coding With Russ
 
 import pygame
 
@@ -14,19 +15,19 @@ class Button():
 
 	def draw(self, surface):
 		action = False
-		#get mouse position
+		#รับพิกัดจากเมาส์
 		pos = pygame.mouse.get_pos()
 
-		#check mouseover and clicked conditions
+		#เช็ตว่าพิกัดเมาส์อยู่ในขอบเขตของปุ่มไหม
 		if self.rect.collidepoint(pos):
-			if pygame.mouse.get_pressed()[0] == 1 and self.clicked == False:
+			if pygame.mouse.get_pressed()[0] == 1 and self.clicked == False: #[0] คือยังไม่ไกด 1 คือกดแล้ว
 				self.clicked = True
 				action = True
 
 		if pygame.mouse.get_pressed()[0] == 0:
 			self.clicked = False
 
-		#draw button on screen
+		
 		surface.blit(self.image, (self.rect))
 
 		return action
