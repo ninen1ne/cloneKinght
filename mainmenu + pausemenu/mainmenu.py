@@ -157,16 +157,16 @@ def play():
 
 def options():
     
-    video_img = pygame.image.load("button_video.png").convert_alpha()
+    video_img = pygame.image.load("mainmenu + pausemenu/button_video.png").convert_alpha()
     video_button = button.Button(360,80, video_img, 1)
 
-    audio_img = pygame.image.load("button_audio.png").convert_alpha()
+    audio_img = pygame.image.load("mainmenu + pausemenu/button_audio.png").convert_alpha()
     audio_button = button.Button(360,180, audio_img, 1)
 
-    control_img = pygame.image.load("button_control.png").convert_alpha()
+    control_img = pygame.image.load("mainmenu + pausemenu/button_control.png").convert_alpha()
     control_button = button.Button(360,280, control_img, 1)
 
-    back_img = pygame.image.load("button_back.png").convert_alpha()
+    back_img = pygame.image.load("mainmenu + pausemenu/button_back.png").convert_alpha()
     back_button = button.Button(360,380, back_img, 1)
 
     running = True
