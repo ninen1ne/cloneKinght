@@ -1,4 +1,4 @@
-#Run This This File
+#Run This File
 #Cr. Coding With Russ
 
 import pygame
@@ -17,7 +17,7 @@ screen = pygame.display.set_mode((SCREEN_W , SCREEN_H))
 game_pause = False
 menu_state = "main"
 
-# line 19-39 --- ใส่รูปภาพ
+# line 19-40 --- ใส่รูปภาพ
 resume_img = pygame.image.load("pausemenu/button_resume.png").convert_alpha() #convert_alpha() = ทำให้สามารถใช้งานภาพที่มีความโปร่งใสได้อย่างมีประสิทธิภาพ
 resume_button = button.Button(360, 140, resume_img, 1)
 
