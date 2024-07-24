@@ -35,7 +35,7 @@ def gen_text(text, font, color, x, y):
     img_rect = img.get_rect(center=(x,y))
     screen.blit(img, (img_rect))
 
-
+#แนะนำให้เอาเมาส์ย่อตรง def จะได้ไม่รกจอ
 #จะเห็นว่ามี def อยู่ 3 อัน mainmenu play options
 #แต่ละ def จะมีการ run screen ของตัวเอง
 #เราจะให้ mainmenu เป็นตัวเริ่มแรกใ เลยสั่งใช้งานฟังก์ชัน mainmenu() ในบรรทัดล่างสุด
